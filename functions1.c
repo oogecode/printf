@@ -3,13 +3,13 @@
 /************************* PRINT UNSIGNED NUMBER *************************/
 /**
  * print_unsigned - Prints an unsigned number
- * @types: List of arguments on unassigned
+ * @types: Lista of arguments
  * @buffer: Buffer array to handle print
  * @flags:  Calculates active flags
- * @width: Width
+ * @width: get width
  * @precision: Precision specifications
- * @size: Size specifier in the program
- * Return: Number of chars printed  will be returned
+ * @size: Size specifier
+ * Return: Number of chars printed
  */
 int print_unsigned(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
@@ -41,10 +41,10 @@ int print_unsigned(va_list types, char buffer[],
  * @types: Lista of arguments
  * @buffer: Buffer array to handle print
  * @flags:  Calculates active flags
- * @width: Width
+ * @width: get width
  * @precision: Precision specification
- * @size: Size specifier in the program
- * Return: Number of chars printed will be returned
+ * @size: Size specifier
+ * Return: Number of chars printed
  */
 int print_octal(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
@@ -159,3 +159,4 @@ int print_hexa(va_list types, char map_to[], char buffer[],
 
 	return (write_unsgnd(0, i, buffer, flags, width, precision, size));
 }
+
